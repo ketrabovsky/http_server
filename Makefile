@@ -123,6 +123,33 @@ server/fast:
 	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/build
 .PHONY : server/fast
 
+src/http.o: src/http.cpp.o
+
+.PHONY : src/http.o
+
+# target to build an object file
+src/http.cpp.o:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/http.cpp.o
+.PHONY : src/http.cpp.o
+
+src/http.i: src/http.cpp.i
+
+.PHONY : src/http.i
+
+# target to preprocess a source file
+src/http.cpp.i:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/http.cpp.i
+.PHONY : src/http.cpp.i
+
+src/http.s: src/http.cpp.s
+
+.PHONY : src/http.s
+
+# target to generate assembly for a file
+src/http.cpp.s:
+	$(MAKE) -f CMakeFiles/server.dir/build.make CMakeFiles/server.dir/src/http.cpp.s
+.PHONY : src/http.cpp.s
+
 src/main.o: src/main.cpp.o
 
 .PHONY : src/main.o
@@ -159,6 +186,9 @@ help:
 	@echo "... rebuild_cache"
 	@echo "... edit_cache"
 	@echo "... server"
+	@echo "... src/http.o"
+	@echo "... src/http.i"
+	@echo "... src/http.s"
 	@echo "... src/main.o"
 	@echo "... src/main.i"
 	@echo "... src/main.s"
