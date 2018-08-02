@@ -67,6 +67,12 @@ namespace Http {
 		HTTP_VERSION_NOT_SUPPORTED = 505,
 	};
 
+	enum {
+		GET,
+		POST,
+		DELETE,
+	};
+
 
 	class Http {
 	private:
@@ -74,6 +80,11 @@ namespace Http {
 		 * Http response status
 		 */
 		int status;
+
+		/*
+		 * Http method
+		 */
+		std::string method;
 
 		/*
 		 * Response body (e.g. Html)

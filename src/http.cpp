@@ -48,6 +48,12 @@ namespace Http {
 			{HTTP_VERSION_NOT_SUPPORTED, "Http Version Not Supported"},
 	};
 
+	std::map <int, std::string> method {
+			{GET, "GET"},
+			{POST, "POST"},
+			{DELETE, "DELETE"},
+	};
+
 	Http::Http()
 	{
 	}
